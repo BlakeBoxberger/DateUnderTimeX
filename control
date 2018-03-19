@@ -1,0 +1,9 @@
+Package: com.neinzedd9.dateundertimex
+Name: DateUnderTimeX
+Depends: mobilesubstrate
+Version: 1.1.1
+Architecture: iphoneos-arm
+Description: Adds the date under the status bar on iPhone X.
+Maintainer: NeinZedd9
+Author: NeinZedd9
+Section: Tweaks
