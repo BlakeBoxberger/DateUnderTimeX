@@ -26,14 +26,6 @@
 	}
 }
 
-- (void)setCenter:(CGPoint)point {
-	if([self.text containsString:@":"]) {
-		point.x = 26.83333333333;
-		point.y = 6.666666666666;
-	}
-	%orig(point);
-}
-
 %end
 
 @interface _UIStatusBarTimeItem
@@ -63,18 +55,6 @@
 	self.frame = CGRectMake(0, 0, self.frame.size.width, 31);
 	self.pulseLayer.frame = CGRectMake(0, 0, self.frame.size.width, 31);
 	%orig(point);
-}
-
-%end
-
-%hook _UIStatusBarNavigationItem
-
-- (id)applyStyleAttributes:(id)arg1 toDisplayItem:(id)arg2 {
-	return nil;
-}
-
-- (id)applyUpdate:(id)arg1 toDisplayItem:(id)arg2 {
-	return nil;
 }
 
 %end
